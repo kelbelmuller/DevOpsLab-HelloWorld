@@ -21,5 +21,5 @@ deploy:
   skip_cleanup: true 
   provider: heroku
   api-key: 
-    secure: dd44e609-76d0-4719-9f08-ffd91c8166a4
+    secure: $HEROKU_API_KEY
   app: kelbeltest1
