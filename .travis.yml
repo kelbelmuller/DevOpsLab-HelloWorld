@@ -8,6 +8,15 @@ python:
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
 sudo: required
 
+
+before_script:
+  - npm install
+  - npm run build
+  - apt-get update -y
+  - apt-get install rubygems -y
+  - gem install dpl
+
+
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
