@@ -8,12 +8,6 @@ python:
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
 sudo: required
 
-
-before_script:
-  - apt-get install rubygems -y
-  - gem install dpl
-
-
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
@@ -27,5 +21,5 @@ deploy:
   skip_cleanup: true 
   provider: heroku
   api-key: 
-    secure: $HEROKU_API_KEY
+    secure: "2fa3d333-c0ae-47fc-adae-6956ef646692"
   app: kelbeltest1
