@@ -22,5 +22,7 @@ deploy:
   skip_cleanup: true 
   provider: heroku
   api-key: 
-    secure: "2fa3d333-c0ae-47fc-adae-6956ef646692"
+    secure: $HEROKU_API_KEY
   app: kelbeltest1
+  on:
+    repo: kelbelmuller/DevOpsLab-HelloWorld
