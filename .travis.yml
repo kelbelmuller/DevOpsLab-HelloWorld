@@ -13,7 +13,8 @@ install:
   - pip install flask
   - gem install dpl
   - gem install travis
-  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org --add deploy.api_key
+  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org
+#  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org --add deploy.api_key
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
