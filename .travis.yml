@@ -12,6 +12,7 @@ sudo: required
 install:
   - pip install flask
   - gem install dpl
+  - gem install travis
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
