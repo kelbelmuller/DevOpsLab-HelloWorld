@@ -8,11 +8,12 @@ python:
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
 sudo: required
 
+before:
+  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --add deploy.api_key --org
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
   - gem install dpl
-  - gem install travis
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
