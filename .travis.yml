@@ -13,7 +13,7 @@ install:
   - pip install flask
   - gem install dpl
   - gem install travis
-  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --add deploy.api_key --org
+  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org --add deploy.api_key
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
@@ -21,8 +21,8 @@ script:
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
-  skip_cleanup: true 
   provider: heroku
+  skip_cleanup: true
   api-key: 
     secure: $HEROKU_API_KEY
   app: kelbeltest1
