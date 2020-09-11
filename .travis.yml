@@ -13,7 +13,7 @@ install:
   - pip install flask
   - gem install dpl
   - gem install travis
-  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org
+#  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org
 #  - travis encrypt 2fa3d333-c0ae-47fc-adae-6956ef646692 --org --add deploy.api_key
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
@@ -25,7 +25,7 @@ deploy:
   provider: heroku
   skip_cleanup: true
   api-key: 
-    secure: $HEROKU_API_KEY
+    secure: "L02JLjhLjq6A7XZPzz2/NPa1/MPvHYbKWwMeM1CsXCqQK3zXi1jusrOzakGItAIF6bKqbL0qtDIa82z/0GXgdACFZ2AmGLxZWymn/fCr22K69jBNyo4GsoR6cX02/8t01zzuq4Yq6ckfwfC/fZ2qRWiq/7lQps2G8ADz1hyJ6xGRp3bqYKcS35LbATYRKzcmWNjYbwxVKvope2SGrQ4HqSziha0hAerGCkFU23eH4pezFk94onLSd8jhA4y0F1z/Jr3jJ4ASlZMEHw07uyrVG6pCL1J6Plc6wscRQ3NE2mEEXmpj5WQVh3G51geAHe8LVWH0hnojKZHk+uXzVW+USrBuFQRDrs1+gVJdxEsUJ0FU08HG/XNBy1jXp5v4mOpxbaE3oG+Ks+gCtAJTN93tWP10FNKwEwtOQfuvybn+RoXxmSHz3qyojVavsBxgckZ/YPOyCsvu0h2PC21ZbjuTm4DmCtpZ1wbRWdjSprlI1IR0Wp5gbSSLSAv6cpjMANE9mHHf3BQT/yxQ1CRlPSmUXT6qnGZYqZdnez0Q/9B+fkFskd6Pb2C9JrV+85MkBsW33Ex5HasAfnT8F19LLKtiJs33EAYBwsOOxAb2qMW4Atex2wSAvbTWMXZlWJEbZJxLULwEFP72GLhci0Y4p9UOUgzjfvv1qg9yNLSFHZY7Y8w="
   app: kelbeltest1
   on:
     repo: kelbelmuller/DevOpsLab-HelloWorld
